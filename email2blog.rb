@@ -10,7 +10,7 @@ sig = "--"
 ARGF.read.split("\n\n").each { |paragraph|
 
   # ignore the signature
-  if paragraph =~ /^#{sig}/
+  if paragraph =~ /^#{sig}$/
     break
   end
 
